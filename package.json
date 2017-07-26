@@ -1,0 +1,19 @@
+{
+  "name": "generator-connext-font-end",
+  "version": "0.0.1",
+  "description": "Yeoman generator for connext font-end",
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "chalk": "^2.0.1",
+    "lodash": "^4.17.4",
+    "yeoman-generator": "^1.1.1",
+    "yosay": "^2.0.0"
+  },
+  "repository": "yeoman/generator-connext-font-end",
+  "license": "MIT"
+}
