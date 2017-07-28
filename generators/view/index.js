@@ -11,7 +11,7 @@ let _ = require('lodash');
 module.exports = class extends Generator {
     prompting() {
         let srcDir = this.config.get('srcDir') || 'src';
-        let viewDir = this.config.get('apiDir') || 'view';
+        let viewDir = this.config.get('apiDir') || 'views';
 
         let prompts = [{
             type: 'input',
@@ -34,7 +34,7 @@ module.exports = class extends Generator {
         let tPath = this.templatePath.bind(this);
         let dPath = this.destinationPath.bind(this);
         let filepath = function (filename) {
-            return path.join('src/view', props.name, filename);
+            return path.join('src/views', props.name, filename);
         };
 
 
