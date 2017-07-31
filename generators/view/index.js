@@ -34,7 +34,7 @@ module.exports = class extends Generator {
         let tPath = this.templatePath.bind(this);
         let dPath = this.destinationPath.bind(this);
         let filepath = function (filename) {
-            return path.join('src/views', props.name, filename);
+            return path.join('src/views', _.kebabCase(props.name), filename);
         };
 
 
