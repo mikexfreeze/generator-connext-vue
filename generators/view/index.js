@@ -41,6 +41,7 @@ module.exports = class extends Generator {
         copyTpl(tPath('view-tmp.vue'), dPath(filepath(props.name+'.vue')), props);
         copyTpl(tPath('view-tmp.js'), dPath(filepath(props.name+'.js')), props);
         copyTpl(tPath('view-tmp.scss'), dPath(filepath(props.name+'.scss')), props);
+        copyTpl(tPath('components'), dPath(filepath('components')), props);
 
     }
 
